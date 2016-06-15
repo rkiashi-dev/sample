@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-30T04:51:34" hostname="www5058uj.sakura.ne.jp" time="0.038">
+  <properties/>
+  <testcase name="sample_test01" classname="SampleTest" time="0.038"/>
+  <system-out><![CDATA[[ a,  b]]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

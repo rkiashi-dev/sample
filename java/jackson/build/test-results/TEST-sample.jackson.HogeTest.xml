@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sample.jackson.HogeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-13T08:14:45" hostname="www5058uj.sakura.ne.jp" time="0.333">
+  <properties/>
+  <testcase name="testAA" classname="sample.jackson.HogeTest" time="0.333"/>
+  <system-out><![CDATA[abc
+{"id":10,"name":"hoge"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
