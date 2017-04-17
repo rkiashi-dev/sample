@@ -1,0 +1,11 @@
+buildroot: /home/ope/git/sample/cpp
+timestamp: 1466663080.6
+datetime: Thursday Jun 23, 2016 15:24:40
+machine: www5058uj.sakura.ne.jp
+version: 1.0.1
+user: ope
+path: /home/ope/git/sample/cpp
+id: pants_run_2016_06_23_15_24_40_604_a3cbbc4574594687ac0d2b9c677c9c88
+cmd_line: pants test help
+default_report: /home/ope/git/sample/cpp/.pants.d/reports/pants_run_2016_06_23_15_24_40_604_a3cbbc4574594687ac0d2b9c677c9c88/html/build.html
+outcome: FAILURE
