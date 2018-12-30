@@ -1,0 +1,6 @@
+<table><tr><td class="timing-string">0.059</td>
+                          <td class="timing-label">main:setup</td></tr><tr><td class="timing-string">0.034</td>
+                          <td class="timing-label">main:goals</td></tr><tr><td class="timing-string">0.004</td>
+                          <td class="timing-label">main:goals:goals</td></tr><tr><td class="timing-string">0.001</td>
+                          <td class="timing-label">main:setup:parse</td></tr><tr><td class="timing-string">0.001</td>
+                          <td class="timing-label">main:complete</td></tr><table>

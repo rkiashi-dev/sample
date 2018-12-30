@@ -1,0 +1,13 @@
+buildroot: /home/ope/git/sample/cpp
+timestamp: 1466662726.98
+datetime: Thursday Jun 23, 2016 15:18:46
+machine: www5058uj.sakura.ne.jp
+version: 1.0.1
+user: ope
+path: /home/ope/git/sample/cpp
+id: pants_run_2016_06_23_15_18_46_980_3706bc625d204248baa3219862256835
+cmd_line: pants goals
+default_report: /home/ope/git/sample/cpp/.pants.d/reports/pants_run_2016_06_23_15_18_46_980_3706bc625d204248baa3219862256835/html/build.html
+branch: master
+revision: 534e407f27fa14ee82b0327842ab96b86166069c
+outcome: SUCCESS

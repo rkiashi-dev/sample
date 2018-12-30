@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 71.0.3578 (Mac OS X 10.14.2)" package="" timestamp="2018-12-22T00:05:04" id="0" hostname="ToshiakinoMacBook-Air.local" tests="4" errors="0" failures="0" time="0.165">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.093" classname="Chrome_71_0_3578_(Mac_OS_X_10_14_2).AppComponent"/>
+  <testcase name="AppComponent should have as title 'jest1'" time="0.038" classname="Chrome_71_0_3578_(Mac_OS_X_10_14_2).AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.033" classname="Chrome_71_0_3578_(Mac_OS_X_10_14_2).AppComponent"/>
+  <testcase name="hello hello()" time="0.001" classname="Chrome_71_0_3578_(Mac_OS_X_10_14_2).hello"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
