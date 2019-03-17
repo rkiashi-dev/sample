@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuite name="Safari 12.0.0 (Mac OS X 10.14.0)" package="" timestamp="2018-10-31T12:25:34" id="0" hostname="ToshiakinoMacBook-Air.local" tests="3" errors="0" failures="0" time="0.387">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Safari/605.1.15"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.257" classname="AppComponent"/>
+  <testcase name="AppComponent should have as title 'first'" time="0.067" classname="AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.063" classname="AppComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
