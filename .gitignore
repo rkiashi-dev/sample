@@ -35,4 +35,6 @@ bin
 *.log
 *.swp
 *.bak
+*.exe
+
 
