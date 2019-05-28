@@ -26,16 +26,21 @@ export class AppComponent {
   ];
   columnWidth = 100;
 
+  spread:GC.Spread.Sheets.Workbook ;
+  
+
   workbookInit(args){
-    let spread:GC.Spread.Sheets.Workbook = args.spread;
+    this.spread = args.spread;
     // GC.Spread.Sheets.Culture("ja-jp");
     // console.log( GC.Spread.Common.CultureManager.getCultureInfo("zh-cn") ) ;
     // console.log( GC.Spread.Common.CultureManager.getCultureInfo("z1jp") ) ;
-    let sheet = spread.getActiveSheet();
+    let sheet = this.spread.getActiveSheet();
     sheet.getCell(0,0).text("My SpreadJS Angular Project").foreColor("blue");
     console.log( GC.Spread.Common.CultureManager.culture() ) ;
     GC.Spread.Common.CultureManager.culture( "ja-jp" ) ;
     console.log( GC.Spread.Common.CultureManager.culture() ) ;
+
+    sheet.setActiveCell( 3, 3 ) ;
 
   }
 
@@ -44,10 +49,11 @@ export class AppComponent {
     console.log( GC.Spread.Common.CultureManager.culture() ) ;
 //    GC.Spread.Common.CultureManager.culture( "zh-cn" ) ;
 
+    let sheet = this.spread.getActiveSheet();
+    sheet.clearSelection() ;
+    sheet.addSelection(3, -1, 1, -1);
 
-new GC.Spread.Sheets.Workbook(document.getElementById("aa"), {
-                sheetCount: 1
-            });
+    setTimeout( ()=> { alert("test."); }, 1000 ) ;
 
   }
 
