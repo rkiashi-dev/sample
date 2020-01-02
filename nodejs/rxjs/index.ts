@@ -8,12 +8,18 @@ import * as RxOpe from 'rxjs/operators';
 
 //const example =  Rx.interval(1000).pipe( RxOpe.takeWhile( val => val < 4 ) );
 
+<<<<<<< HEAD
+const sources = [ 
+=======
 /*
 Rx.concat(
+>>>>>>> bca19918185979beed03160b79c954aeb1d3087c
  Rx.interval(1000).pipe( RxOpe.takeWhile( val => val < 4 ) ),
  Rx.interval(2000).pipe( RxOpe.takeWhile( val => val < 10 ) )
-).
- pipe( RxOpe.takeWhile(val => val < 3 ))
+] ;
+
+Rx.concat( ...sources )
+ .pipe( RxOpe.takeWhile(val => val < 3 ))
  .subscribe( val => console.log( val ) ) ;
 */
 
