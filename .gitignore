@@ -1,3 +1,5 @@
+*.code-workspace
+
 # Java
 *.class
 *.jar
