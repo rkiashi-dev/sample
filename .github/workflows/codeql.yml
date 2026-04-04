@@ -37,7 +37,7 @@ on:
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.runner }}
     permissions:
       security-events: write
       packages: read
@@ -50,20 +50,28 @@ jobs:
         include:
           - language: java-kotlin
             build-mode: autobuild
+            runner: ubuntu-latest
           - language: javascript-typescript
             build-mode: none
+            runner: ubuntu-latest
           - language: python
             build-mode: none
+            runner: ubuntu-latest
           - language: ruby
             build-mode: none
+            runner: ubuntu-latest
           - language: c-cpp
             build-mode: autobuild
+            runner: ubuntu-latest
           - language: go
             build-mode: autobuild
+            runner: ubuntu-latest
           - language: swift
             build-mode: autobuild
+            runner: macos-latest
           - language: csharp
             build-mode: autobuild
+            runner: ubuntu-latest
 
     steps:
       - name: Checkout repository
