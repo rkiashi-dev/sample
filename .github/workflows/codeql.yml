@@ -1,0 +1,89 @@
+name: "CodeQL Security Analysis"
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    paths:
+      - "**/*.java"
+      - "**/*.kt"
+      - "**/*.js"
+      - "**/*.ts"
+      - "**/*.py"
+      - "**/*.rb"
+      - "**/*.c"
+      - "**/*.cpp"
+      - "**/*.h"
+      - "**/*.go"
+      - "**/*.swift"
+      - "**/*.cs"
+  pull_request:
+    branches: [ "main", "master" ]
+    paths:
+      - "**/*.java"
+      - "**/*.kt"
+      - "**/*.js"
+      - "**/*.ts"
+      - "**/*.py"
+      - "**/*.rb"
+      - "**/*.c"
+      - "**/*.cpp"
+      - "**/*.h"
+      - "**/*.go"
+      - "**/*.swift"
+      - "**/*.cs"
+  schedule:
+    - cron: "0 0 * * 1"
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ matrix.runner }}
+    permissions:
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: java-kotlin
+            build-mode: autobuild
+            runner: ubuntu-latest
+          - language: javascript-typescript
+            build-mode: none
+            runner: ubuntu-latest
+          - language: python
+            build-mode: none
+            runner: ubuntu-latest
+          - language: ruby
+            build-mode: none
+            runner: ubuntu-latest
+          - language: c-cpp
+            build-mode: autobuild
+            runner: ubuntu-latest
+          - language: go
+            build-mode: autobuild
+            runner: ubuntu-latest
+          - language: swift
+            build-mode: autobuild
+            runner: macos-latest
+          - language: csharp
+            build-mode: autobuild
+            runner: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"

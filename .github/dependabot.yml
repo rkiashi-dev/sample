@@ -1,0 +1,41 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/nodejs/swagger"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/nodejs/rxjs"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/bosque/first"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven"
+    directory: "/java/snakeyaml/tuto"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven"
+    directory: "/java/glassfish/sandartifact"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven"
+    directory: "/java/Arquillian/sample/web"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directory: "/python"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
