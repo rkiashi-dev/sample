@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "webpack": "^5.105.4",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^7.2.3"
   },
   "overrides": {
     "braces": "^3.0.3",
