@@ -72,7 +72,7 @@
     <dependency>
       <groupId>net.avh4.util</groupId>
       <artifactId>imagecomparison</artifactId>
-      <version>0.0.2</version>
+      <version>0.3.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
