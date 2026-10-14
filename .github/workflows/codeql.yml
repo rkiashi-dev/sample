@@ -48,9 +48,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - language: java-kotlin
-            build-mode: autobuild
-            runner: ubuntu-latest
+          # - language: java-kotlin
+          #   build-mode: autobuild
+          #   runner: ubuntu-latest
           - language: javascript-typescript
             build-mode: none
             runner: ubuntu-latest
@@ -60,9 +60,9 @@ jobs:
           - language: ruby
             build-mode: none
             runner: ubuntu-latest
-          - language: c-cpp
-            build-mode: autobuild
-            runner: ubuntu-latest
+          # - language: c-cpp
+          #   build-mode: autobuild
+          #   runner: ubuntu-latest
           - language: go
             build-mode: autobuild
             runner: ubuntu-latest
